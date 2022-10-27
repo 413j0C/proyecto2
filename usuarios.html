@@ -74,6 +74,25 @@
         </div>
       </div>
       <div class="col py-3">
+        
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Confirmar Eliminación de registro</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Esta seguro que desea eliminar este registro
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-danger">Confirmar</button>
+      </div>
+    </div>
+  </div>
+</div>
         <table id="example" class="display" style="width:100%">
             <thead>
                 <tr>
@@ -90,7 +109,7 @@
                     <td>Admin</td>
                     <td>
                         <button class="btn btn-secondary">Modificar</button>
-                        <button class="btn btn-danger">Eliminar</button>
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Eliminar</button>
                     </td>
                 </tr>
                 <tr>
@@ -248,7 +267,7 @@
                 </tr>
             </tfoot>
         </table>
-        <button class="btn btn-success">Agregar</button>
+        <a href="crearUsuario.html"><button class="btn btn-success">Agregar</button></a>
       </div>
     </div>
   </div>
@@ -295,5 +314,4 @@
     </div>
   </div>
 </footer>
-
 </html>
